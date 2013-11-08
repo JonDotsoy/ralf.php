@@ -10,5 +10,6 @@
  * @author Jonathan Delgado Z <Jonad.correo@gmail.com>
  */
 
+
 //Inicia la carga del framework
 include("lib/simplehtmldom/simple_html_dom.php");
