@@ -6,7 +6,7 @@
  */
 class htmlUi
 {
-	
+
 	/**
 	 * Esta variable almacena la estructura completa del hmtl
 	 *
@@ -14,7 +14,7 @@ class htmlUi
 	 * @author Jonathan Delgado Z <jonad.correo@gmail.com>
 	 **/
 	var $source;
-
+ 
 	function __construct()
 	{
 
