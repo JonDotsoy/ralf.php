@@ -7,9 +7,12 @@
  * este framework es rápida configuración de la base de datos, la opción
  * de usar vistas para trabajar la interfaz gráficas.
  *
- * @author Jonathan Delgado Z <Jonad.correo@gmail.com>
+ * @author 		Jonathan Delgado Z <Jonad.correo@gmail.com>
+ * @license 	https://raw.github.com/alfa30/ralf-framework-php/master/LICENSE.txt
+ * @version 	0.1.2
+ * @link 		https://github.com/alfa30/ralf-framework-php
  */
 
-
-//Inicia la carga del framework
+//Load librari
 include("lib/simplehtmldom/simple_html_dom.php");
+
