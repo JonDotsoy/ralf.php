@@ -7,4 +7,4 @@ Algunos de los componentes que soluciona este framework es rápida configuració
 Licencia
 --------
 
-Ver (Licencia)[https://raw.github.com/alfa30/ralf-framework-php/master/LICENSE.txt]
+Ver [Licencia](https://raw.github.com/alfa30/ralf-framework-php/master/LICENSE.txt)
