@@ -15,4 +15,5 @@
 
 //Load librari
 include("lib/simplehtmldom/simple_html_dom.php");
+include("buildUi.php");
 
