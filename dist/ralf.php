@@ -9,7 +9,7 @@
  *
  * @author 		Jonathan Delgado Z <Jonad.correo@gmail.com>
  * @license 	https://raw.github.com/alfa30/ralf-framework-php/master/LICENSE.txt
- * @version 	0.1.2
+ * @version 	prototipe
  * @link 		https://github.com/alfa30/ralf-framework-php
  */
 
