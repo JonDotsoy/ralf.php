@@ -1,19 +1,37 @@
-<?php
+<?php 
 
-/**
- * rafl Framework PHP
- * Es un framework php diseñado para acelerar el desarrollo de una
- * aplicación web escrita en php. Algunos de los componentes que soluciona
- * este framework es rápida configuración de la base de datos, la opción
- * de usar vistas para trabajar la interfaz gráficas.
- *
- * @author 		Jonathan Delgado Z <Jonad.correo@gmail.com>
- * @license 	https://raw.github.com/alfa30/ralf-framework-php/master/LICENSE.txt
- * @version 	prototipe
- * @link 		https://github.com/alfa30/ralf-framework-php
- */
+if (class_exists("ralf") != true) {
+	class ralf
+	{
+		protected static $listImport = [];
+		protected $_pathFile = null;
 
-//Load librari
-include("lib/simplehtmldom/simple_html_dom.php");
-include("buildUi.php");
+		function __construct() {
+			$this->_pathFile = dirname(__FILE__);
+		}
 
+		static function import($rute)
+		{
+			if (gettype($rute) == 'string') {
+				if (!in_array($rute, ralf::$listImport)) {
+
+					$pathSearch = dirname(__FILE__).'\\'.str_replace('.', '\\', $rute);
+					$pathSearch .= ".php";
+					
+					if (file_exists($pathSearch)) {
+						include $pathSearch;
+					} else {
+						throw new Exception("Seller does not exist");
+					}
+
+					ralf::$listImport[] = $rute;
+				}
+			} else {
+				throw new Exception("The data type is not correct");
+			}
+		}
+	}
+}
+
+$ralf = new ralf();
+$GLOBAL["ralf"] = $ralf;
