@@ -17,6 +17,11 @@ class themeProyectHTML
 
 	}
 
+	public function __toString()
+	{
+		return $this->_dom_html->outertext;
+	}
+
 	/**
 	* Cargar el dom del thema en el objeto
 	*/
@@ -72,12 +77,73 @@ class themeProyectHTML
 		$this->solutionPathComplement();
 	}
 
+
+
 	/*
 	* imprime el codigo HTML del documento Tema
 	*/
 	public function out()
 	{
 		echo $this->_dom_html;
+	}
+
+	/**
+	 * Buesca el elemento en cuention.
+	 * @return void
+	 **/
+	public function getElement($math)
+	{
+		$find = $this->_dom_html->find($math);
+		if (count($find)==1) {
+			$find = $find[0];
+		}
+		return $find;
+	}
+
+	/**
+	 * undocumented function
+	 *
+	 * @return void
+	 * @param title String
+	 **/
+	public function changeTitle($title)
+	{
+		$this->_dom_html->find("head",0)->find("title",0)->innertext = $title;
+	}
+
+	/**
+	 * undocumented function
+	 *
+	 * @return void
+	 * @param elem simple_html_dom_node
+	 **/
+	static public function cloneObejtDom($elem)
+	{
+
+		if (gettype($elem)=="object") {
+			if (get_class($elem)=="simple_html_dom_node") {
+				$dom = str_get_html($elem->outertext);
+				return $dom;
+			}
+			if (get_class($elem)=="themeProyectHTML") {
+				$dom = str_get_html($elem->__toString());
+				return $dom;
+			}
+		}
+	}
+
+	/**
+	 * 
+	 * 
+	 */
+	public static function removeObjectDom($elem)
+	{
+		if (gettype($elem)=="object") {
+			if (get_class($elem)=="simple_html_dom_node") {
+				$elem->outertext = "";
+				unset($elem);
+			}
+		}
 	}
 }
 
