@@ -6,7 +6,7 @@ Algunos de los componentes que soluciona este framework es rápida configuració
 
 Version
 -------
-Prototype 0.23.1
+Prototipo 0.23.1
 
 Licencia
 --------
