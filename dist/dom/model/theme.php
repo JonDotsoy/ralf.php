@@ -3,8 +3,8 @@
 ralf::import("dom.html");
 
 /**
-* 
-*/
+ * @author Jonathan Delgado Zamorano <jonad.correo@gmail.com>
+ */
 class themeProyectHTML
 {
 	
