@@ -1,8 +1,7 @@
 Rafl Framework PHP
 ==================
 
-Es un framework php diseñado para acelerar el desarrollo de una aplicación web escrita en php.
-Algunos de los componentes que soluciona este framework es rápida configuración de la base de datos, la opción de usar vistas para trabajar la interfaz gráficas.
+Ralf es un framework que facilite la creación de software en php mediante la administración de módulos libres que facilitan la construcción de una aplicación. Ralf permite la incorporación de módulos externos e incorpora sus propios módulos que facilitan la construcción de cualquier aplicación diseñada para la web.
 
 Version
 -------
