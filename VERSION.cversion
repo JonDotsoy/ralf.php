@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application version="1.0" author="Jonathan Delgado Z <Jonad.correo@gmail.com>" />
-	<check branch="master" type="default" version="Prototype 0.23.5" url="https://github.com/alfa30/ralf-framework-php"></check>
+	<check branch="master" role="git" type="default" version="Prototype 0.23.5" url="https://github.com/alfa30/ralf-framework-php"></check>
 </application>
