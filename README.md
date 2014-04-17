@@ -6,7 +6,7 @@ Ralf.php es un framework que facilite la creación de software en php mediante l
 
 Version
 -------
-Prototype 0.23.5
+Developer 0.23.5
 
 Descargar
 ---------
