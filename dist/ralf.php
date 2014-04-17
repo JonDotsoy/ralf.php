@@ -9,7 +9,7 @@
  * any application designed for web.
  * 
  * @author Jonathan Delgado Zamorano <jonad.correo@gmail.com>
- * @version Prototype 0.23.5
+ * @version 0.23.5
  * @package ralf
  */
 if (class_exists("ralf") != true) {
@@ -21,7 +21,7 @@ if (class_exists("ralf") != true) {
 			$this->_pathFile = dirname(__FILE__);
 		}
 		public final static function version(){
-			return "Prototype 0.23.5";
+			return "0.23.5";
 		}
 		public static function import($rute)
 		{
