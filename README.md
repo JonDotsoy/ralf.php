@@ -7,6 +7,18 @@ Version
 -------
 0.23.5
 
+Descargar
+---------
+### Distribución limpia
+Compilada y mitificada lista para ser usada en cualquier proyecto, no incluye documento de pruebas.
+
+[https://github.com/alfa30/ralf-framework-php/archive/Distribute-Version.zip](https://github.com/alfa30/ralf-framework-php/archive/Distribute-Version.zip)
+
+### Distribución desarrolladores
+Esta versión incluye el código fuente sin compilar y no reducido. Esta versión incluye documentos de prueba y ejemplos. 
+
+[https://github.com/alfa30/ralf-framework-php/archive/master.zip](https://github.com/alfa30/ralf-framework-php/archive/master.zip)
+
 Licencia
 --------
 
