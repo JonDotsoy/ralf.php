@@ -5,11 +5,7 @@ Ralf es un framework que facilite la creación de software en php mediante la ad
 
 Version
 -------
-<<<<<<< HEAD
-0.23.1
-=======
-Prototype 0.23.5
->>>>>>> master
+0.23.5
 
 Licencia
 --------
