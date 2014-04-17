@@ -11,5 +11,8 @@ Prototype 0.23.5
 Licencia
 --------
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Ralf Frameowrk Php</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://jonad.in/" property="cc:attributionName" rel="cc:attributionURL">Jonathan Delgado Zamorano</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.<br />Basada en una obra en <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/alfa30/ralf-framework-php" rel="dct:source">https://github.com/alfa30/ralf-framework-php</a>.
-Ver [Licencia](https://raw.github.com/alfa30/ralf-framework-php/master/LICENSE.txt)
+![Img](http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+
+[Ralf Frameowrk Php]() por [Jonathan Delgado Zamorano](http://jonad.in/) se distribuye bajo una [Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional](http://creativecommons.org/licenses/by-nc-sa/4.0/). Basada en una obra en [https://github.com/alfa30/ralf-framework-php](https://github.com/alfa30/ralf-framework-php)
+
+Esta obra está licenciada bajo la Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional. Para ver una copia de esta licencia, visita [http://creativecommons.org/licenses/by-nc-sa/4.0/](https://raw.github.com/alfa30/ralf-framework-php/master/LICENSE.txt).
