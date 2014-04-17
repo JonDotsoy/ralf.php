@@ -20,7 +20,10 @@ if (class_exists("ralf") != true) {
 		function __construct() {
 			$this->_pathFile = dirname(__FILE__);
 		}
-		static function import($rute)
+		public final static function version(){
+			return "Prototype 0.23.5";
+		}
+		public static function import($rute)
 		{
 			if (gettype($rute) == 'string') {
 				if (!in_array($rute, ralf::$listImport)) {
