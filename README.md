@@ -20,6 +20,10 @@ Esta versión incluye el código fuente sin compilar, documentada y no reducido.
 
 [https://github.com/alfa30/ralf-framework-php/archive/master.zip](https://github.com/alfa30/ralf-framework-php/archive/master.zip)
 
+Documentación
+-------------
+Leer en [http://htmlpreview.github.io/?https://github.com/alfa30/ralf.php/blob/master/doc/index.html](http://htmlpreview.github.io/?https://github.com/alfa30/ralf.php/blob/master/doc/index.html)
+
 Licencia
 --------
 
