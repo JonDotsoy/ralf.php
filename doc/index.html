@@ -1,16 +1,207 @@
 <!doctype html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<title>Ralf.php</title>
-</head>
-<body>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<title>Ralf.php</title>
+	</head>
+	<body>
+		<header class="navbar navbar-static-top navbar-default" id="top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="https://github.com/alfa30/ralf.php/" class="navbar-brand">Ralf.php</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="https://github.com/alfa30/ralf.php#descargar">Descargar</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Documentación Ralf.php</h1>
+				<p>Múltiples componentes que aran a Ralf.php de tus Framework favoridos.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="container">
+				<h3 id="index">Indice</h3>
+				<nav><ul>
+						<li>
+							<a href="#install">Como installar Ralf.php</a>
+							<ul>
+								<li><a href="#firstapp">Implementar Ralf.php</a></li>
+							</ul>
+						</li>
+						<li><a href="#controles">Componentes de ralf.php</a>
+							<ul>
+								<li><a href="#dom.html-php_simple_html_dom_parser">[dom.html] PHP Simple HTML DOM Parser</a>
+									<ul>
+										<li><a href="#function-file_get_html">function file_get_html</a></li>
+										<li><a href="#function-str_get_html">function str_get_html</a></li>
+										<li><a href="#class-simple_html_dom">class simple_html_dom</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<hr>
+			<article>
+				<div class="container">
+					<h2 id="install">Como installar Ralf.php</h2>
+					<hr>
+					<p>Para poder hacer uso de y de los componentes ralf.php es requerido primero hacerse de una copia del ralf.php para lo que puedes descargar desde <a href="https://github.com/alfa30/ralf.php#descargar">aquí (https://github.com/alfa30/ralf.php#descargar)</a>.</p>
+					<p>Dentro del archivo comprimido existe una carpeta llamada “dist”, la cual hay que ubicar en una ruta desde la cual puedas usarla. Por ejemplo:</p>
+					<pre>/ruta/</pre>
+					<h3 id="firstapp">Implementar Ralf.php</h3>
+					<p>Para usar ralf.php en nuestro proyecto es necesario incluir en todos nuestros proyectos relacionados el archivo <code>ralf.php</code> que se encuentra dentro de nuestra carpeta <kbd>dist/</kbd> que se descargó previamente.</p>
+					<p>Para ello utilizamos la sentencia <code>include</code> de php. Por ejemplo: </p>
+					<pre>Include <span style="color:#dd1144">'…/dist/ralf.php'</span>;</pre>
+					<h2 id="controles">Componentes de ralf.php</h2>
+					<hr>
+					<p>Los componentes nos ayudaran al momento de desarrollar nuestras aplicaciones en php. Integrando características y herramientas que hacen más claro el código y hacen más sencillo el desarrollo.</p>
+					<p>Todos los componentes en ralf.php por defecto no se pueden utilizar tan solo instanciando a <code>ralf.php</code> si no que se debe hacer uso del método estático que se implementa en ralf.php.</p>
+					<pre>ralf::<span style="color:teal">import</span>(<span style="color:#dd1144">"dom.model.themeHtml"</span>);</pre>
+					<p>Esta instrucción importara el modulo que corresponde al componente que deseemos utilizar.</p>
+					
+					<h3 id="dom.html-php_simple_html_dom_parser"><span class="label label-primary">dom.html</span> PHP Simple HTML DOM Parser</h3>
+					<dl class="dl-horizontal">
+						<dt>Autor</dt>
+						<dd>S.C. Chen &lt;me578022@gmail.com&gt;</dd>
+						<dt>Versión</dt>
+						<dd>v1.5</dd>
+						<dt>Link</dt>
+						<dd><a href="http://simplehtmldom.sourceforge.net/">http://simplehtmldom.sourceforge.net/</a></dd>
+					</dl>
+					<blockquote>
+						<p>Un simple analizador DOM HTML PHP escrito en PHP5 +, compatible con HTML válido, y proporciona una manera muy fácil de manejar elementos HTML.</p>
+						<footer><cite><a href="http://sourceforge.net/projects/simplehtmldom/#project-description">Fuente</a></cite></footer>
+					</blockquote>
+					<p>Este módulo incorpora una uno de los componentes más robustos dentro de ralf.php el cual permite leer el DOM del código HTML.</p>
+					<div id="function-file_get_html" class="panel panel-default">
+						<div class="panel-heading">
+							<h4><span class="label label-default">function</span> file_get_html ( string $filename ) : <a href="#class-simple_html_dom">simple_html_dom</a></h4>
+						</div>
+						<div class="panel-body">
+							<p>Crea un objeto DOM a partir de un archivo o un URL.</p>
+							<hr>
+							<h4>Parametros:</h4>
+							<dl>
+								<dt>string $filename</dt>
+								<dd>Indica la ruta del archivo que desea convertir en tipo DOM.</dd>
+							</dl>
+						</div>
+						<div class="panel-footer">
+							<a href="http://simplehtmldom.sourceforge.net/manual_api.htm">Fuente</a>
+						</div>
+					</div>
+					<div id="function-str_get_html" class="panel panel-default">
+						<div class="panel-heading">
+							<h4><span class="label label-default">function</span> str_get_html ( string $content ) : <a href="#class-simple_html_dom">simple_html_dom</a></h4>
+						</div>
+						<div class="panel-body">
+							<p>Crea un objeto DOM a partir de una cadena de texto.</p>
+							<hr>
+							<h4>Parametros</h4>
+							<dl>
+								<dt>$content</dt>
+								<dd>Cadena de texto que debe tener la estructura que se desea transformar a objeto DOM.</dd>
+							</dl>
+						</div>
+						<div class="panel-footer">
+							<a href="http://simplehtmldom.sourceforge.net/manual_api.htm">Fuente</a>
+						</div>
+					</div>
+					<div id="class-simple_html_dom" class="panel panel-default">
+						<div class="panel-heading">
+							<h4><span class="label label-default">class</span> simple_html_dom</h4>
+						</div>
+						<div class="panel-body">
+							<p>sencillo analizador DOM de HTML</p>
+							<hr>
+							<h4><span class="label label-info">DOM</span> methods &amp; properties</h4>
+							<dl>
+								<dt>void __construct ( [string $filename] )</dt>
+								<dd>Constructor, establezca el parámetro de nombre de archivo se cargará automáticamente el contenido, ya sea texto o archivo / url.</dd>
+								<dt>string plaintext</dt>
+								<dd>Devuelve el contenido extraído de HTML.</dd>
+								<dt>void clear ()</dt>
+								<dd>Limpie la memoria.</dd>
+								<dt>void load ( string $content )</dt>
+								<dd>Cargar contenido de una <strong>String</strong>.</dd>
+								<dt>string save ( [string $filename] )</dt>
+								<dd>Vuelca el árbol DOM interno de vuelta a una string. Si el nombre del archivo $ se establece, string de resultado se guardará en el archivo.</dd>
+								<dt>void load_file ( string $filename )</dt>
+								<dd>Cargue los contenidos de un de un archivo o un URL.</dd>
+								<dt>void set_callback ( string $function_name )</dt>
+								<dd>Establecer una función de devolución de llamada</dd>
+								<dt>mixed find ( string $selector [, int $index] )</dt>
+								<dd>Encontrar elementos por el selector CSS. Devuelve el elemento enésimo objeto si el índice está establecido, de lo contrario devuelve un array de objetos.</dd>
+							</dl>
+							<hr>
+							<h4><span class="label label-info">Element</span> methods &amp; properties </h4>
+							<dl>
+								<dt>string [attribute]</dt>
+								<dd>Leer o escribir el valor del atributo del elemento.</dd>
+								<dt>string tag</dt>
+								<dd>Leer o escribir el nombre de etiqueta del elemento.</dd>
+								<dt>string outertext</dt>
+								<dd>Leer y escribir el texto HTML externo del elemento.</dd>
+								<dt>string innertext</dt>
+								<dd>Leer y escribir el texto HTML interno elemento.</dd>
+								<dt>string plaintext</dt>
+								<dd>Leer y escribir el texto claro del elemento.</dd>
+								<dt>mixed find ( string $selector [, int $index] )</dt>
+								<dd>Encuentra los niños por el selector CSS. Devuelve el elemento <strong>object</strong> enésimo caso <strong>index</strong> se establece, de lo contrario, se devuelve un <strong>array</strong> de objeto.</dd>
+							</dl>
+							<hr>
+							<h4><span class="label label-info">DOM</span> traversing</h4>
+							<dl>
+								<dt>mixed $e->children ( [int $index] )</dt>
+								<dd>Returns the Nth child object if index is set, otherwise return an array of children.</dd>
+								<dt>element $e->parent ()</dt>
+								<dd>Returns the parent of element.</dd>
+								<dt>element $e->first_child ()</dt>
+								<dd>Returns the first child of element, or null if not found.</dd>
+								<dt>element $e->last_child ()</dt>
+								<dd>Returns the last child of element, or null if not found.</dd>
+								<dt>element $e->next_sibling ()</dt>
+								<dd>Returns the next sibling of element, or null if not found.</dd>
+								<dt>element $e->prev_sibling ()</dt>
+								<dd>Returns the previous sibling of element, or null if not found.</dd>
+							</dl>
+						</div>
+						<div class="panel-footer">
+							<a href="https://github.com/alfa30/ralf.php/blob/master/dist/dom/html.php#L963">Fuente 1</a>
+							|
+							<a href="http://simplehtmldom.sourceforge.net/manual_api.htm">Fuente 2</a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<footer>
+			<hr>
+			<div class="container text-center">
+				Diseñado y creado por <a href="http://jonad.in/">Jonathan Delgado Zamorano</a> (<a href="http://jonad.in/twitter">@jonad_in</a>). Se distribuye bajo una <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>. Basada en una obra en <a href="https://github.com/alfa30/ralf-framework-php">https://github.com/alfa30/ralf-framework-php</a>
+			</div>
+			<br>
+		</footer>
+	</body>
 </html>
