@@ -16,7 +16,7 @@ Compilada y mitificada lista para ser usada en cualquier proyecto, no incluye do
 [https://github.com/alfa30/ralf-framework-php/archive/Distribute-Version.zip](https://github.com/alfa30/ralf-framework-php/archive/Distribute-Version.zip)
 
 ### Distribución desarrolladores
-Esta versión incluye el código fuente sin compilar y no reducido. Esta versión incluye documentos de prueba y ejemplos. 
+Esta versión incluye el código fuente sin compilar, documentada y no reducido. Esta versión es usada de forma evaluativa previa a versión oficial.
 
 [https://github.com/alfa30/ralf-framework-php/archive/master.zip](https://github.com/alfa30/ralf-framework-php/archive/master.zip)
 
